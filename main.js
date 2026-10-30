@@ -6,7 +6,7 @@
       skip: "Skip to content",
       name: "Naser Sadrmanesh",
       langSwitch: "فا",
-      "nav.about": "About", "nav.focus": "Focus", "nav.stack": "Stack", "nav.connect": "Connect",
+      "nav.about": "About", "nav.focus": "Focus", "nav.stack": "Stack", "nav.connect": "Connect", "nav.writing": "Writing", "writing.title": "Writing", "writing.sub": "Notes on building AI products for commerce.",
       eyebrow: "Building in public",
       role: "AI Product Engineer · Founder · Open-Source Builder",
       tagline: "Turning AI into products people actually use.",
@@ -38,7 +38,7 @@
       skip: "رفتن به محتوا",
       name: "ناصر صدرمنش",
       langSwitch: "EN",
-      "nav.about": "درباره", "nav.focus": "تمرکز", "nav.stack": "فناوری", "nav.connect": "ارتباط",
+      "nav.about": "درباره", "nav.focus": "تمرکز", "nav.stack": "فناوری", "nav.connect": "ارتباط", "nav.writing": "نوشته ها", "writing.title": "نوشته ها", "writing.sub": "یادداشت هایی درباره ساخت محصولات هوش مصنوعی برای تجارت.",
       eyebrow: "ساختن در فضای عمومی",
       role: "مهندس محصول هوش مصنوعی و کارآفرین",
       tagline: "تبدیل هوش مصنوعی به محصولاتی که مردم واقعا از آنها استفاده می کنند.",
@@ -169,6 +169,19 @@
     }
   }
 
+  var WRITING = [
+    { url: "https://dev.to/sadrmanesh/four-open-source-tools-for-ai-in-e-commerce-and-what-building-them-taught-me-5abl", title: "Four open-source tools for AI in e-commerce, and what building them taught me", meta: "dev.to \u00b7 2026" }
+  ];
+
+  function renderWriting() {
+    document.getElementById("writingList").innerHTML = WRITING.map(function (w) {
+      return '<li><a class="link" href="' + w.url + '" target="_blank" rel="noopener">' +
+        '<span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="' + ICONS.devdotto + '"/></svg></span>' +
+        '<span class="link-text" lang="en" dir="ltr"><span class="link-name">' + esc(w.title) + '</span><span class="link-handle">' + esc(w.meta) + "</span></span>" +
+        ARROW + "</a></li>";
+    }).join("");
+  }
+
   function renderLinks(lang) {
     document.getElementById("links").innerHTML = LINKS.map(function (l) {
       return '<li><a class="link" href="' + l.url + '" target="_blank" rel="noopener me">' +
@@ -192,6 +205,7 @@
     renderProjects(lang);
     renderStack(lang);
     renderLinks(lang);
+    renderWriting();
     if (persist) try { localStorage.setItem("lang", lang); } catch (e) {}
   }
 
