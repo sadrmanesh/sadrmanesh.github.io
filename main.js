@@ -85,8 +85,8 @@
   ];
 
   var PROJECTS = [
-    { id: "commerce-agent-skills", lang: "Markdown \u00b7 Node.js", icon: "skills", en: "Twenty Agent Skills, each with a matching rule, that help AI coding agents build e-commerce and marketplace products: WooCommerce, Shopify, payments, search and RTL.", fa: "بیست مهارت عامل، هر کدام با یک قاعده متناظر، که به عامل های کدنویسی هوش مصنوعی کمک می کنند محصولات فروشگاهی و بازارگاهی بسازند: ووکامرس، شاپیفای، پرداخت، جستجو و راست به چپ.", tags: ["Agent Skills", "Prompt engineering", "WooCommerce", "Shopify", "Payments", "RTL"] },
-    { id: "woocommerce-mcp", lang: "TypeScript", icon: "mcp", en: "Model Context Protocol server for WooCommerce: multi-store, previewed safe writes, refunds, bulk pricing and sales analytics, over stdio or secured HTTP.", fa: "سرور Model Context Protocol برای ووکامرس: چند فروشگاه، تغییرات امن با پیش نمایش، بازپرداخت، قیمت گذاری گروهی و تحلیل فروش، روی stdio یا HTTP امن.", tags: ["MCP", "TypeScript", "Node.js", "WooCommerce", "OAuth 2.0", "Docker"] },
+    { id: "commerce-agent-skills", lang: "Markdown \u00b7 Node.js", icon: "skills", ver: "v0.3.0", install: "npx @sadrmanesh/commerce-agent-skills init", en: "Twenty-nine Agent Skills, each with a matching rule, that help AI coding agents build e-commerce and marketplace products: WooCommerce, Shopify, Stripe and Iranian gateways, inventory, search and RTL.", fa: "بیست و نه مهارت عامل، هر کدام با یک قاعده متناظر، که به عامل های کدنویسی هوش مصنوعی کمک می کنند محصولات فروشگاهی و بازارگاهی بسازند: ووکامرس، شاپیفای، Stripe و درگاه های ایرانی، موجودی انبار، جستجو و راست به چپ.", tags: ["Agent Skills", "Prompt engineering", "WooCommerce", "Shopify", "Payments", "RTL"] },
+    { id: "woocommerce-mcp", lang: "TypeScript", icon: "mcp", ver: "v0.3.0", install: "npx -y @sadrmanesh/woocommerce-mcp", en: "Model Context Protocol server for WooCommerce with 47 tools: multi-store, previewed safe writes, customers, coupons, fulfillment, webhooks and sales analytics, over stdio or secured HTTP.", fa: "سرور Model Context Protocol برای ووکامرس با ۴۷ ابزار: چند فروشگاه، تغییرات امن با پیش نمایش، مشتریان، کوپن ها، ارسال سفارش، وب هوک ها و تحلیل فروش، روی stdio یا HTTP امن.", tags: ["MCP", "TypeScript", "Node.js", "WooCommerce", "OAuth 2.0", "Docker"] },
     { id: "persian-rag", lang: "Python", icon: "rag", en: "Persian-first RAG toolkit: Farsi normalization, PDF and Word loading, hybrid retrieval, reranking, vector stores and evaluation.", fa: "جعبه ابزار پایتون برای RAG فارسی: یکدست سازی متن فارسی، خواندن PDF و Word، بازیابی ترکیبی، رتبه بندی دوباره، پایگاه های برداری و ارزیابی.", tags: ["RAG", "Embeddings", "Qdrant", "pgvector", "FastAPI", "Rerankers"] },
     { id: "llm-search-eval", lang: "Python", icon: "eval", en: "Evaluates e-commerce search with IR metrics and LLM judge panels, with significance tests, cost budgets, an HTML dashboard and a CI quality gate.", fa: "سنجش کیفیت جستجوی فروشگاهی با معیارهای بازیابی اطلاعات و هیئت داوران مدل زبانی، همراه با آزمون معناداری، کنترل هزینه، داشبورد HTML و دروازه کیفیت در CI.", tags: ["LLM-as-judge", "nDCG", "Elasticsearch", "Algolia", "GitHub Actions", "Python"] }
   ];
@@ -140,10 +140,11 @@
     document.getElementById("projectList").innerHTML = PROJECTS.map(function (p) {
       return '<article class="project" id="project-' + p.id + '">' +
         '<div class="project-top"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24">' + PROJECT_ICONS[p.icon] + '</svg></div>' +
-        '<div class="project-meta" lang="en" dir="ltr"><span class="badge">' + esc(p.lang) + '</span><span class="badge badge-ver">v0.2.0</span></div></div>' +
+        '<div class="project-meta" lang="en" dir="ltr"><span class="badge">' + esc(p.lang) + '</span><span class="badge badge-ver">' + esc(p.ver || "v0.2.0") + '</span></div></div>' +
         '<h3 class="project-name" lang="en" dir="ltr"><a href="' + GH + p.id + '" target="_blank" rel="noopener">' + esc(p.id) + '</a></h3>' +
         '<p class="project-pitch">' + esc(p[lang]) + '</p>' +
         '<ul class="tags" lang="en" dir="ltr">' + p.tags.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join("") + '</ul>' +
+        (p.install ? '<pre class="project-install" lang="en" dir="ltr"><code>' + esc(p.install) + '</code></pre>' : '') +
         '<div class="project-links">' +
         '<a class="plink" href="' + GH + p.id + '" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="' + ICONS.github + '"/></svg><span>' + esc(t["projects.repo"]) + '</span></a>' +
         '<a class="plink plink-primary" href="' + DOCS + p.id + '/" target="_blank" rel="noopener"><span>' + esc(t["projects.docs"]) + '</span>' + ARROW + '</a>' +

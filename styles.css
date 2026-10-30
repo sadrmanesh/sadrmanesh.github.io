@@ -157,6 +157,8 @@ html[dir="rtl"] .project-name { text-align: right; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 22px; padding: 0; list-style: none; }
 html[dir="rtl"] .tags { direction: rtl; }
 .tags li { padding: 3px 10px; border-radius: 8px; background: var(--bg-2); border: 1px solid var(--border); color: var(--text); font: 500 12.5px/1.5 "Inter", sans-serif; white-space: nowrap; }
+.project-install { margin: 0 0 18px; padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg-2); color: var(--text); font: 500 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; overflow-x: auto; white-space: pre; text-align: left; }
+.project-install code::before { content: "$ "; color: var(--muted); }
 .project-links { display: flex; flex-wrap: wrap; gap: 10px; padding-top: 18px; border-top: 1px solid var(--border); }
 .plink { display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--border-strong); background: var(--surface); font-size: 14px; font-weight: 600; transition: border-color .2s, background .2s, transform .15s; }
 .plink:hover { border-color: var(--text); transform: translateY(-1px); }
