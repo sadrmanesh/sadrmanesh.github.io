@@ -24,7 +24,7 @@
       "nav.projects": "Projects", "cta.projects": "Open source",
       "projects.title": "Open source",
       "projects.sub": "Production-grade building blocks for AI-powered commerce, built in the open.",
-      "projects.repo": "Repository", "projects.docs": "Documentation", "projects.demo": "Demo",
+      "projects.repo": "Repository", "projects.docs": "Documentation", "projects.demo": "Demo", "projects.dataset": "Dataset",
       "stack.hint": "Highlighted items link to the open-source project that uses them.",
       "stack.tip": "Used in {p}",
       "stack.title": "Tech stack",
@@ -58,7 +58,7 @@
       "projects.title": "پروژه های متن باز",
       "projects.sub": "اجزای آماده تولید برای تجارت مبتنی بر هوش مصنوعی، ساخته شده در فضای عمومی.",
       "projects.repo": "مخزن",
-      "projects.docs": "مستندات", "projects.demo": "نسخه نمایشی",
+      "projects.docs": "مستندات", "projects.demo": "نسخه نمایشی", "projects.dataset": "مجموعه داده",
       "stack.hint": "موارد برجسته به پروژه متن بازی پیوند دارند که از آن ها استفاده می کند.",
       "stack.tip": "به کار رفته در {p}",
       "stack.title": "فناوری ها",
@@ -85,10 +85,10 @@
   ];
 
   var PROJECTS = [
-    { id: "commerce-agent-skills", lang: "Markdown \u00b7 Node.js", icon: "skills", ver: "v0.3.1", install: "npx @sadrmanesh/commerce-agent-skills init", en: "Twenty-nine Agent Skills, each with a matching rule, that help AI coding agents build e-commerce and marketplace products: WooCommerce, Shopify, Stripe and Iranian gateways, inventory, search and RTL.", fa: "بیست و نه مهارت عامل، هر کدام با یک قاعده متناظر، که به عامل های کدنویسی هوش مصنوعی کمک می کنند محصولات فروشگاهی و بازارگاهی بسازند: ووکامرس، شاپیفای، Stripe و درگاه های ایرانی، موجودی انبار، جستجو و راست به چپ.", tags: ["Agent Skills", "Prompt engineering", "WooCommerce", "Shopify", "Payments", "RTL"] },
-    { id: "woocommerce-mcp", lang: "TypeScript", icon: "mcp", ver: "v0.3.2", install: ["npx -y @sadrmanesh/woocommerce-mcp", "docker pull ghcr.io/sadrmanesh/woocommerce-mcp"], en: "Model Context Protocol server for WooCommerce with 47 tools: multi-store, previewed safe writes, customers, coupons, fulfillment, webhooks and sales analytics, over stdio or secured HTTP. Listed on the official MCP Registry.", fa: "سرور Model Context Protocol برای ووکامرس با ۴۷ ابزار: چند فروشگاه، تغییرات امن با پیش نمایش، مشتریان، کوپن ها، ارسال سفارش، وب هوک ها و تحلیل فروش، روی stdio یا HTTP امن. ثبت شده در MCP Registry رسمی.", tags: ["MCP", "TypeScript", "Node.js", "WooCommerce", "OAuth 2.0", "Docker", "MCP Registry"] },
+    { id: "commerce-agent-skills", lang: "Markdown \u00b7 Node.js", icon: "skills", ver: "v0.3.1", demo: "https://huggingface.co/datasets/sadrmanesh/commerce-agent-skills", demoLabel: "projects.dataset", install: "npx @sadrmanesh/commerce-agent-skills init", en: "Twenty-nine Agent Skills, each with a matching rule, that help AI coding agents build e-commerce and marketplace products: WooCommerce, Shopify, Stripe and Iranian gateways, inventory, search and RTL.", fa: "بیست و نه مهارت عامل، هر کدام با یک قاعده متناظر، که به عامل های کدنویسی هوش مصنوعی کمک می کنند محصولات فروشگاهی و بازارگاهی بسازند: ووکامرس، شاپیفای، Stripe و درگاه های ایرانی، موجودی انبار، جستجو و راست به چپ.", tags: ["Agent Skills", "Prompt engineering", "WooCommerce", "Shopify", "Payments", "RTL"] },
+    { id: "woocommerce-mcp", lang: "TypeScript", icon: "mcp", ver: "v0.3.2", demo: "https://huggingface.co/spaces/sadrmanesh/woocommerce-mcp-explorer", install: ["npx -y @sadrmanesh/woocommerce-mcp", "docker pull ghcr.io/sadrmanesh/woocommerce-mcp"], en: "Model Context Protocol server for WooCommerce with 47 tools: multi-store, previewed safe writes, customers, coupons, fulfillment, webhooks and sales analytics, over stdio or secured HTTP. Listed on the official MCP Registry.", fa: "سرور Model Context Protocol برای ووکامرس با ۴۷ ابزار: چند فروشگاه، تغییرات امن با پیش نمایش، مشتریان، کوپن ها، ارسال سفارش، وب هوک ها و تحلیل فروش، روی stdio یا HTTP امن. ثبت شده در MCP Registry رسمی.", tags: ["MCP", "TypeScript", "Node.js", "WooCommerce", "OAuth 2.0", "Docker", "MCP Registry"] },
     { id: "persian-rag", lang: "Python", icon: "rag", ver: "v0.3.1", demo: "https://huggingface.co/spaces/sadrmanesh/persian-rag-demo", install: ["pip install persian-rag", "docker pull ghcr.io/sadrmanesh/persian-rag"], en: "Persian-first RAG toolkit: Farsi normalization, web, PDF and Word loading, hybrid retrieval on Elasticsearch or OpenSearch, Persian query rewriting, cited answers, chat memory and a Persian benchmark.", fa: "جعبه ابزار پایتون برای RAG فارسی: یکدست سازی متن فارسی، خواندن وب، PDF و Word، بازیابی ترکیبی روی Elasticsearch یا OpenSearch، بازنویسی پرسش فارسی، پاسخ با ارجاع به منبع، حافظه گفتگو و محک فارسی.", tags: ["RAG", "Embeddings", "OpenSearch", "pgvector", "FastAPI", "Rerankers", "Docker"] },
-    { id: "llm-search-eval", lang: "Python", icon: "eval", ver: "v0.3.1", install: "pip install llm-search-eval", en: "Evaluates e-commerce search with IR metrics and LLM judge panels: pairwise judging, bootstrap confidence intervals, cost estimates, sampling, an HTML dashboard and a CI gate that comments on pull requests.", fa: "سنجش کیفیت جستجوی فروشگاهی با معیارهای بازیابی اطلاعات و هیئت داوران مدل زبانی: داوری دوبه دو، بازه اطمینان بوت استرپ، برآورد هزینه، نمونه گیری، داشبورد HTML و دروازه کیفیت در CI که روی Pull Request نظر می گذارد.", tags: ["LLM-as-judge", "nDCG", "Elasticsearch", "Meilisearch", "GitHub Actions", "Python"] }
+    { id: "llm-search-eval", lang: "Python", icon: "eval", ver: "v0.3.2", demo: "https://huggingface.co/spaces/sadrmanesh/llm-search-eval-demo", install: ["pip install llm-search-eval", "docker pull sadrmanesh/llm-search-eval"], en: "Evaluates e-commerce search with IR metrics and LLM judge panels: pairwise judging, bootstrap confidence intervals, cost estimates, sampling, an HTML dashboard and a CI gate that comments on pull requests.", fa: "سنجش کیفیت جستجوی فروشگاهی با معیارهای بازیابی اطلاعات و هیئت داوران مدل زبانی: داوری دوبه دو، بازه اطمینان بوت استرپ، برآورد هزینه، نمونه گیری، داشبورد HTML و دروازه کیفیت در CI که روی Pull Request نظر می گذارد.", tags: ["LLM-as-judge", "nDCG", "Elasticsearch", "Meilisearch", "GitHub Actions", "Python"] }
   ];
 
   var PROJECT_ICONS = {
@@ -147,7 +147,7 @@
         (p.install ? '<pre class="project-install" lang="en" dir="ltr">' + [].concat(p.install).map(function (c) { return '<code>' + esc(c) + '</code>'; }).join("\n") + '</pre>' : '') +
         '<div class="project-links">' +
         '<a class="plink" href="' + GH + p.id + '" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="' + ICONS.github + '"/></svg><span>' + esc(t["projects.repo"]) + '</span></a>' +
-        (p.demo ? '<a class="plink" href="' + esc(p.demo) + '" target="_blank" rel="noopener"><span>' + esc(t["projects.demo"]) + '</span></a>' : '') +
+        (p.demo ? '<a class="plink" href="' + esc(p.demo) + '" target="_blank" rel="noopener"><span>' + esc(t[p.demoLabel || "projects.demo"]) + '</span></a>' : '') +
         '<a class="plink plink-primary" href="' + DOCS + p.id + '/" target="_blank" rel="noopener"><span>' + esc(t["projects.docs"]) + '</span>' + ARROW + '</a>' +
         '</div></article>';
     }).join("");
