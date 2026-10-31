@@ -176,13 +176,17 @@
     { url: "https://dev.to/sadrmanesh/why-rag-breaks-on-persian-text-and-what-i-built-to-fix-it-normalization-half-spaces-spelling-2jgm", title: "Why RAG breaks on Persian text, and what I built to fix it", meta: "dev.to \u00b7 2026" },
     { url: "https://dev.to/sadrmanesh/is-your-new-search-actually-better-label-gaps-llm-judge-panels-and-paired-statistics-for-offline-490p", title: "Is your new search actually better? Label gaps, LLM judge panels, and paired statistics for offline search evaluation", meta: "dev.to \u00b7 2026" },
     { url: "https://dev.to/sadrmanesh/treat-agent-skills-like-code-evals-a-strict-validator-and-an-npx-installer-for-commerce-skills-13dk", title: "Treat agent skills like code: evals, a strict validator, and an npx installer for commerce skills", meta: "dev.to \u00b7 2026" },
+    { url: "https://www.linkedin.com/pulse/preview-confirm-audit-designing-safe-write-tools-ai-live-sadrmanesh-jwy5f/", title: "Preview, confirm, audit: designing safe write tools for AI agents on a live store", meta: "linkedin \u00b7 2026", icon: "linkedin" },
+    { url: "https://www.linkedin.com/pulse/your-new-search-actually-better-five-questions-i-ask-naser-sadrmanesh-s2sff/", title: "Is your new search actually better? Five questions I ask before shipping a ranking change", meta: "linkedin \u00b7 2026", icon: "linkedin" },
+    { url: "https://www.linkedin.com/pulse/why-rag-quietly-fails-persian-text-design-decisions-fixed-sadrmanesh-wd4vf/", title: "Why RAG quietly fails on Persian text, and the design decisions that fixed it", meta: "linkedin \u00b7 2026", icon: "linkedin" },
+    { url: "https://www.linkedin.com/pulse/knowledge-your-senior-engineers-carry-packaged-coding-sadrmanesh-xtenf/", title: "The knowledge your senior engineers carry, packaged for coding agents", meta: "linkedin \u00b7 2026", icon: "linkedin" },
     { url: "https://dev.to/sadrmanesh/four-open-source-tools-for-ai-in-e-commerce-and-what-building-them-taught-me-5abl", title: "Four open-source tools for AI in e-commerce, and what building them taught me", meta: "dev.to \u00b7 2026" }
   ];
 
   function renderWriting() {
     document.getElementById("writingList").innerHTML = WRITING.map(function (w) {
       return '<li><a class="link" href="' + w.url + '" target="_blank" rel="noopener">' +
-        '<span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="' + ICONS.devdotto + '"/></svg></span>' +
+        '<span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="' + ICONS[w.icon || "devdotto"] + '"/></svg></span>' +
         '<span class="link-text" lang="en" dir="ltr"><span class="link-name">' + esc(w.title) + '</span><span class="link-handle">' + esc(w.meta) + "</span></span>" +
         ARROW + "</a></li>";
     }).join("");
