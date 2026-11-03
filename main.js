@@ -182,6 +182,7 @@
   }
 
   var WRITING = [
+    { url: "https://doi.org/10.5281/zenodo.23923535", title: "persian-rag: A Persian-First Retrieval-Augmented Generation Toolkit \u2014 Normalization, Hybrid Retrieval, and Retrieval Evaluation", meta: "zenodo \u00b7 technical report \u00b7 2026", icon: "googlescholar" },
     { url: "https://doi.org/10.5281/zenodo.23897615", title: "Technical Report: WooCommerce Model Context Protocol Server - A Multi-Store, Previewed Safe-Write Architecture for Autonomous AI Agents in E-Commerce", meta: "zenodo \u00b7 technical report \u00b7 2026", icon: "googlescholar" },
     { url: "https://doi.org/10.5281/zenodo.23883598", title: "commerce-agent-skills: Architectural Specification, Domain Constraints, and Evaluation Framework for E-Commerce AI Coding Agents", meta: "zenodo \u00b7 technical report \u00b7 2026", icon: "googlescholar" },
     { url: "https://dev.to/sadrmanesh/safe-write-tools-for-agents-preview-confirm-audit-and-stale-previews-in-a-woocommerce-mcp-server-2c66", title: "Safe write tools for agents: preview, confirm, audit, and stale previews in a WooCommerce MCP server", meta: "dev.to \u00b7 2026" },
