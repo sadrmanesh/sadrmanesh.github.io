@@ -182,6 +182,8 @@
   }
 
   var WRITING = [
+    { url: "https://doi.org/10.5281/zenodo.23897615", title: "Technical Report: WooCommerce Model Context Protocol Server - A Multi-Store, Previewed Safe-Write Architecture for Autonomous AI Agents in E-Commerce", meta: "zenodo \u00b7 technical report \u00b7 2026", icon: "googlescholar" },
+    { url: "https://doi.org/10.5281/zenodo.23883598", title: "commerce-agent-skills: Architectural Specification, Domain Constraints, and Evaluation Framework for E-Commerce AI Coding Agents", meta: "zenodo \u00b7 technical report \u00b7 2026", icon: "googlescholar" },
     { url: "https://dev.to/sadrmanesh/safe-write-tools-for-agents-preview-confirm-audit-and-stale-previews-in-a-woocommerce-mcp-server-2c66", title: "Safe write tools for agents: preview, confirm, audit, and stale previews in a WooCommerce MCP server", meta: "dev.to \u00b7 2026" },
     { url: "https://dev.to/sadrmanesh/why-rag-breaks-on-persian-text-and-what-i-built-to-fix-it-normalization-half-spaces-spelling-2jgm", title: "Why RAG breaks on Persian text, and what I built to fix it", meta: "dev.to \u00b7 2026" },
     { url: "https://dev.to/sadrmanesh/is-your-new-search-actually-better-label-gaps-llm-judge-panels-and-paired-statistics-for-offline-490p", title: "Is your new search actually better? Label gaps, LLM judge panels, and paired statistics for offline search evaluation", meta: "dev.to \u00b7 2026" },
