@@ -182,6 +182,7 @@
   }
 
   var WRITING = [
+    { url: "https://doi.org/10.6084/m9.figshare.34913889", title: "persian-rag-bench: A Persian Retrieval Benchmark for Spelling-Variant Robustness", meta: "figshare \u00b7 dataset \u00b7 2026", icon: "googlescholar" },
     { url: "https://doi.org/10.5281/zenodo.23923535", title: "persian-rag: A Persian-First Retrieval-Augmented Generation Toolkit \u2014 Normalization, Hybrid Retrieval, and Retrieval Evaluation", meta: "zenodo \u00b7 technical report \u00b7 2026", icon: "googlescholar" },
     { url: "https://doi.org/10.5281/zenodo.23897615", title: "Technical Report: WooCommerce Model Context Protocol Server - A Multi-Store, Previewed Safe-Write Architecture for Autonomous AI Agents in E-Commerce", meta: "zenodo \u00b7 technical report \u00b7 2026", icon: "googlescholar" },
     { url: "https://doi.org/10.5281/zenodo.23883598", title: "commerce-agent-skills: Architectural Specification, Domain Constraints, and Evaluation Framework for E-Commerce AI Coding Agents", meta: "zenodo \u00b7 technical report \u00b7 2026", icon: "googlescholar" },
