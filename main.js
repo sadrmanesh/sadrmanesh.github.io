@@ -24,7 +24,7 @@
       "nav.projects": "Projects", "cta.projects": "Open source",
       "projects.title": "Open source",
       "projects.sub": "Production-grade building blocks for AI-powered commerce, built in the open.",
-      "projects.repo": "Repository", "projects.docs": "Documentation", "projects.demo": "Demo", "projects.dataset": "Dataset", "projects.article": "Read the write-up",
+      "projects.repo": "Repository", "projects.docs": "Documentation", "projects.demo": "Demo", "projects.dataset": "Dataset", "projects.article": "Read the write-up", "projects.store": "Chrome Web Store", "projects.website": "Website", "projects.ext.title": "Browser extensions", "projects.ext.sub": "Published Chrome extensions for translation, DNS, and classifieds search.",
       "stack.hint": "Highlighted items link to the open-source project that uses them.",
       "stack.tip": "Used in {p}",
       "stack.title": "Tech stack",
@@ -59,6 +59,8 @@
       "projects.sub": "اجزای آماده تولید برای تجارت مبتنی بر هوش مصنوعی، ساخته شده در فضای عمومی.",
       "projects.repo": "مخزن",
       "projects.docs": "مستندات", "projects.demo": "نسخه نمایشی", "projects.dataset": "مجموعه داده", "projects.article": "خواندن مقاله",
+      "projects.store": "Chrome Web Store", "projects.website": "وب‌سایت",
+      "projects.ext.title": "افزونه‌های مرورگر", "projects.ext.sub": "افزونه‌های منتشرشدهٔ کروم برای ترجمه، DNS و جستجوی آگهی.",
       "stack.hint": "موارد برجسته به پروژه متن بازی پیوند دارند که از آن ها استفاده می کند.",
       "stack.tip": "به کار رفته در {p}",
       "stack.title": "فناوری ها",
@@ -91,11 +93,20 @@
     { id: "llm-search-eval", article: "https://dev.to/sadrmanesh/is-your-new-search-actually-better-label-gaps-llm-judge-panels-and-paired-statistics-for-offline-490p", lang: "Python", icon: "eval", ver: "v0.5.0", demo: "https://huggingface.co/spaces/sadrmanesh/llm-search-eval-demo", install: ["pip install llm-search-eval", "docker pull sadrmanesh/llm-search-eval"], en: "Evaluates e-commerce search with IR metrics and LLM judge panels: pairwise judging, bootstrap confidence intervals, cost estimates, sampling, an HTML dashboard and a CI gate that comments on pull requests.", fa: "سنجش کیفیت جستجوی فروشگاهی با معیارهای بازیابی اطلاعات و هیئت داوران مدل زبانی: داوری دوبه دو، بازه اطمینان بوت استرپ، برآورد هزینه، نمونه گیری، داشبورد HTML و دروازه کیفیت در CI که روی Pull Request نظر می گذارد.", tags: ["LLM-as-judge", "nDCG", "Elasticsearch", "Meilisearch", "GitHub Actions", "Python"] }
   ];
 
+  var EXTENSIONS = [
+    { id: "ziman-ai", lang: "JavaScript \u00b7 Manifest V3", icon: "ziman", ver: "v1.2.3", store: "https://chromewebstore.google.com/detail/ziman-ai-kurdish-translat/cjmmnobnimheoeeojobgfkgbdbohcjkn", en: "Kurdish (Sorani and Kurmanji) and multilingual translator for Chrome, with an offline phrasebook and optional AI translation using your own AIML API key.", fa: "زمان، افزونهٔ کروم برای ترجمهٔ کردی سورانی و کرمانجی و چند زبان دیگر، با واژه‌نامهٔ آفلاین و ترجمهٔ اختیاری با کلید AIML خودتان.", tags: ["Chrome", "Manifest V3", "Kurdish", "Translation"] },
+    { id: "chrome-dns-manager", lang: "JavaScript \u00b7 Manifest V3", icon: "dns", ver: "v1.5.0", store: "https://chromewebstore.google.com/detail/dns-configuration-manager/opoejijmagmdeeobilcpjnllpmoklnlk", en: "Organizes DNS profiles and DNS-over-HTTPS templates for manual Chrome Secure DNS setup. Browse built-in providers, save custom profiles, and copy the details; it does not change Chrome or system DNS itself.", fa: "پروفایل‌های DNS و قالب‌های DNS-over-HTTPS را برای تنظیم دستی Secure DNS در کروم سازماندهی می‌کند. ارائه‌دهنده‌های آماده را می‌بینید، پروفایل سفارشی ذخیره می‌کنید و جزئیات را کپی می‌کنید؛ خود افزونه تنظیمات DNS کروم یا سیستم را تغییر نمی‌دهد.", tags: ["Chrome", "Manifest V3", "DNS", "DNS-over-HTTPS"] },
+    { id: "hamejoo-chrome", lang: "JavaScript \u00b7 Manifest V3", icon: "search", ver: "v1.0.0", repo: "https://github.com/HameJoo/hamejoo-chrome", docs: "https://hamejoo.github.io/hamejoo-chrome/", demo: "https://hamejoo.ir", demoLabel: "projects.website", store: "https://chromewebstore.google.com/detail/hhchlcjldhlccicaaeiifmfdbacedhoi", en: "Official Chrome extension for HameJoo (\u0647\u0645\u0647\u200c\u062c\u0648): search Iranian classified ads and businesses from the toolbar, the hj address-bar keyword, the right-click menu, or Alt+H. Results open on hamejoo.ir.", fa: "افزونهٔ رسمی همه‌جو برای کروم: جستجوی آگهی و کسب‌وکار در ایران از پاپ‌آپ نوار ابزار، کلیدواژهٔ hj در نوار آدرس، منوی راست‌کلیک یا میانبر Alt+H. نتایج در hamejoo.ir باز می‌شوند.", tags: ["Chrome", "Manifest V3", "Search", "Classifieds"] }
+  ];
+
   var PROJECT_ICONS = {
     skills: '<path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3zM12 12l8-4.5M12 12v9M12 12 4 7.5"/>',
     mcp: '<path d="M4 7h16M4 12h16M4 17h10M17 15l3 2-3 2"/>',
     rag: '<path d="M11 4a7 7 0 1 0 4.2 12.6L20 21M8 11h6M11 8v6"/>',
-    eval: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'
+    eval: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+    ziman: '<path d="M5 5h9a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3h-4l-4 3v-3H5a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3z"/>',
+    dns: '<path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM3.2 12h17.6M12 3c2.6 3 3.7 6 3.7 9s-1.1 6-3.7 9M12 3c-2.6 3-3.7 6-3.7 9s1.1 6 3.7 9"/>',
+    search: '<path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM20 20l-3.8-3.8"/>'
   };
 
   // Stack items demonstrated by a project link to it.
@@ -145,24 +156,31 @@
   var DOCS = "https://sadrmanesh.github.io/";
   var LINK_ICON = '<svg class="chip-ico" viewBox="0 0 24 24" width="11" height="11" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
+  function repoUrl(p) { return p.repo || (GH + p.id); }
+  function docsUrl(p) { return p.docs || (DOCS + p.id + "/"); }
+
+  function projectCard(p, lang, t) {
+    return '<article class="project" id="project-' + p.id + '">' +
+      '<div class="project-top"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24">' + PROJECT_ICONS[p.icon] + '</svg></div>' +
+      '<div class="project-meta" lang="en" dir="ltr"><span class="badge">' + esc(p.lang) + '</span><span class="badge badge-ver">' + esc(p.ver || "v0.2.0") + '</span></div></div>' +
+      '<h3 class="project-name" lang="en" dir="ltr"><a href="' + esc(repoUrl(p)) + '" target="_blank" rel="noopener">' + esc(p.id) + '</a></h3>' +
+      '<p class="project-pitch">' + esc(p[lang]) + '</p>' +
+      '<ul class="tags" lang="en" dir="ltr">' + p.tags.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join("") + '</ul>' +
+      (p.install ? '<pre class="project-install" lang="en" dir="ltr">' + [].concat(p.install).map(function (c) { return '<code>' + esc(c) + '</code>'; }).join("\n") + '</pre>' : '') +
+      '<div class="project-links">' +
+      '<a class="plink" href="' + esc(repoUrl(p)) + '" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="' + ICONS.github + '"/></svg><span>' + esc(t["projects.repo"]) + '</span></a>' +
+      (p.store ? '<a class="plink" href="' + esc(p.store) + '" target="_blank" rel="noopener" lang="en" dir="ltr"><span>' + esc(t["projects.store"]) + '</span></a>' : '') +
+      (p.demo ? '<a class="plink" href="' + esc(p.demo) + '" target="_blank" rel="noopener"><span>' + esc(t[p.demoLabel || "projects.demo"]) + '</span></a>' : '') +
+      (p.article ? '<a class="plink" href="' + esc(p.article) + '" target="_blank" rel="noopener"><span>' + esc(t["projects.article"]) + '</span></a>' : '') +
+      (p.listings || []).map(function (l) { return '<a class="plink" href="' + esc(l[1]) + '" target="_blank" rel="noopener" lang="en" dir="ltr"><span>' + esc(l[0]) + '</span></a>'; }).join("") +
+      '<a class="plink plink-primary" href="' + esc(docsUrl(p)) + '" target="_blank" rel="noopener"><span>' + esc(t["projects.docs"]) + '</span>' + ARROW + '</a>' +
+      '</div></article>';
+  }
+
   function renderProjects(lang) {
     var t = I18N[lang] || I18N.en;
-    document.getElementById("projectList").innerHTML = PROJECTS.map(function (p) {
-      return '<article class="project" id="project-' + p.id + '">' +
-        '<div class="project-top"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24">' + PROJECT_ICONS[p.icon] + '</svg></div>' +
-        '<div class="project-meta" lang="en" dir="ltr"><span class="badge">' + esc(p.lang) + '</span><span class="badge badge-ver">' + esc(p.ver || "v0.2.0") + '</span></div></div>' +
-        '<h3 class="project-name" lang="en" dir="ltr"><a href="' + GH + p.id + '" target="_blank" rel="noopener">' + esc(p.id) + '</a></h3>' +
-        '<p class="project-pitch">' + esc(p[lang]) + '</p>' +
-        '<ul class="tags" lang="en" dir="ltr">' + p.tags.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join("") + '</ul>' +
-        (p.install ? '<pre class="project-install" lang="en" dir="ltr">' + [].concat(p.install).map(function (c) { return '<code>' + esc(c) + '</code>'; }).join("\n") + '</pre>' : '') +
-        '<div class="project-links">' +
-        '<a class="plink" href="' + GH + p.id + '" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="' + ICONS.github + '"/></svg><span>' + esc(t["projects.repo"]) + '</span></a>' +
-        (p.demo ? '<a class="plink" href="' + esc(p.demo) + '" target="_blank" rel="noopener"><span>' + esc(t[p.demoLabel || "projects.demo"]) + '</span></a>' : '') +
-        (p.article ? '<a class="plink" href="' + esc(p.article) + '" target="_blank" rel="noopener"><span>' + esc(t["projects.article"]) + '</span></a>' : '') +
-        (p.listings || []).map(function (l) { return '<a class="plink" href="' + esc(l[1]) + '" target="_blank" rel="noopener" lang="en" dir="ltr"><span>' + esc(l[0]) + '</span></a>'; }).join("") +
-        '<a class="plink plink-primary" href="' + DOCS + p.id + '/" target="_blank" rel="noopener"><span>' + esc(t["projects.docs"]) + '</span>' + ARROW + '</a>' +
-        '</div></article>';
-    }).join("");
+    document.getElementById("projectList").innerHTML = PROJECTS.map(function (p) { return projectCard(p, lang, t); }).join("");
+    document.getElementById("extensionList").innerHTML = EXTENSIONS.map(function (p) { return projectCard(p, lang, t); }).join("");
   }
 
   function renderStack(lang) {
