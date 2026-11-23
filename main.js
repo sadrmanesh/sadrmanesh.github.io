@@ -24,7 +24,7 @@
       "nav.projects": "Projects", "cta.projects": "Open source",
       "projects.title": "Open source",
       "projects.sub": "Production-grade building blocks for AI-powered commerce, built in the open.",
-      "projects.repo": "Repository", "projects.docs": "Documentation", "projects.demo": "Demo", "projects.dataset": "Dataset", "projects.article": "Read the write-up", "projects.store": "Chrome Web Store", "projects.website": "Website", "projects.ext.title": "Browser extensions", "projects.ext.sub": "Published Chrome extensions for translation, DNS, and classifieds search.",
+      "projects.repo": "Repository", "projects.docs": "Documentation", "projects.demo": "Demo", "projects.dataset": "Dataset", "projects.article": "Read the write-up", "projects.store": "Chrome Web Store", "projects.website": "Website", "projects.bazaar": "Cafe Bazaar", "projects.apps.title": "Android apps", "projects.apps.sub": "Published apps on Cafe Bazaar, including HameJoo and the Alwer marketplace family.", "projects.ext.title": "Browser extensions", "projects.ext.sub": "Published Chrome extensions for translation, DNS, and classifieds search.",
       "stack.hint": "Highlighted items link to the open-source project that uses them.",
       "stack.tip": "Used in {p}",
       "stack.title": "Tech stack",
@@ -59,7 +59,8 @@
       "projects.sub": "اجزای آماده تولید برای تجارت مبتنی بر هوش مصنوعی، ساخته شده در فضای عمومی.",
       "projects.repo": "مخزن",
       "projects.docs": "مستندات", "projects.demo": "نسخه نمایشی", "projects.dataset": "مجموعه داده", "projects.article": "خواندن مقاله",
-      "projects.store": "Chrome Web Store", "projects.website": "وب‌سایت",
+      "projects.store": "Chrome Web Store", "projects.website": "وب‌سایت", "projects.bazaar": "کافه‌بازار",
+      "projects.apps.title": "اپ‌های اندروید", "projects.apps.sub": "اپ‌های منتشرشده در کافه‌بازار، از جمله همه‌جو و خانوادهٔ بازار آلور.",
       "projects.ext.title": "افزونه‌های مرورگر", "projects.ext.sub": "افزونه‌های منتشرشدهٔ کروم برای ترجمه، DNS و جستجوی آگهی.",
       "stack.hint": "موارد برجسته به پروژه متن بازی پیوند دارند که از آن ها استفاده می کند.",
       "stack.tip": "به کار رفته در {p}",
@@ -96,7 +97,15 @@
   var EXTENSIONS = [
     { id: "ziman-ai", lang: "JavaScript \u00b7 Manifest V3", icon: "ziman", ver: "v1.2.3", store: "https://chromewebstore.google.com/detail/ziman-ai-kurdish-translat/cjmmnobnimheoeeojobgfkgbdbohcjkn", en: "Kurdish (Sorani and Kurmanji) and multilingual translator for Chrome, with an offline phrasebook and optional AI translation using your own AIML API key.", fa: "زمان، افزونهٔ کروم برای ترجمهٔ کردی سورانی و کرمانجی و چند زبان دیگر، با واژه‌نامهٔ آفلاین و ترجمهٔ اختیاری با کلید AIML خودتان.", tags: ["Chrome", "Manifest V3", "Kurdish", "Translation"] },
     { id: "chrome-dns-manager", lang: "JavaScript \u00b7 Manifest V3", icon: "dns", ver: "v1.5.0", store: "https://chromewebstore.google.com/detail/dns-configuration-manager/opoejijmagmdeeobilcpjnllpmoklnlk", en: "Organizes DNS profiles and DNS-over-HTTPS templates for manual Chrome Secure DNS setup. Browse built-in providers, save custom profiles, and copy the details; it does not change Chrome or system DNS itself.", fa: "پروفایل‌های DNS و قالب‌های DNS-over-HTTPS را برای تنظیم دستی Secure DNS در کروم سازماندهی می‌کند. ارائه‌دهنده‌های آماده را می‌بینید، پروفایل سفارشی ذخیره می‌کنید و جزئیات را کپی می‌کنید؛ خود افزونه تنظیمات DNS کروم یا سیستم را تغییر نمی‌دهد.", tags: ["Chrome", "Manifest V3", "DNS", "DNS-over-HTTPS"] },
-    { id: "hamejoo-chrome", lang: "JavaScript \u00b7 Manifest V3", icon: "search", ver: "v1.0.0", repo: "https://github.com/HameJoo/hamejoo-chrome", docs: "https://hamejoo.github.io/hamejoo-chrome/", demo: "https://hamejoo.ir", demoLabel: "projects.website", store: "https://chromewebstore.google.com/detail/hhchlcjldhlccicaaeiifmfdbacedhoi", en: "Official Chrome extension for HameJoo (\u0647\u0645\u0647\u200c\u062c\u0648): search Iranian classified ads and businesses from the toolbar, the hj address-bar keyword, the right-click menu, or Alt+H. Results open on hamejoo.ir.", fa: "افزونهٔ رسمی همه‌جو برای کروم: جستجوی آگهی و کسب‌وکار در ایران از پاپ‌آپ نوار ابزار، کلیدواژهٔ hj در نوار آدرس، منوی راست‌کلیک یا میانبر Alt+H. نتایج در hamejoo.ir باز می‌شوند.", tags: ["Chrome", "Manifest V3", "Search", "Classifieds"] }
+    { id: "hamejoo-chrome", lang: "JavaScript \u00b7 Manifest V3", icon: "search", ver: "v1.0.0", repo: "https://github.com/HameJoo/hamejoo-chrome", docs: "https://hamejoo.github.io/hamejoo-chrome/", demo: "https://hamejoo.ir", demoLabel: "projects.website", store: "https://chromewebstore.google.com/detail/hhchlcjldhlccicaaeiifmfdbacedhoi", listings: [["Cafe Bazaar", "https://cafebazaar.ir/app/com.hamejoo.app"]], en: "Official Chrome extension for HameJoo (\u0647\u0645\u0647\u200c\u062c\u0648): search Iranian classified ads and businesses from the toolbar, the hj address-bar keyword, the right-click menu, or Alt+H. Results open on hamejoo.ir.", fa: "افزونهٔ رسمی همه‌جو برای کروم: جستجوی آگهی و کسب‌وکار در ایران از پاپ‌آپ نوار ابزار، کلیدواژهٔ hj در نوار آدرس، منوی راست‌کلیک یا میانبر Alt+H. نتایج در hamejoo.ir باز می‌شوند.", tags: ["Chrome", "Manifest V3", "Search", "Classifieds"] }
+  ];
+
+  var APPS = [
+    { id: "hamejoo-app", name: "HameJoo", nameFa: "همه‌جو", lang: "Android", icon: "search", ver: "v1.0.45", repo: false, docs: false, home: "https://hamejoo.ir", store: "https://cafebazaar.ir/app/com.hamejoo.app", storeLabel: "projects.bazaar", demo: "https://hamejoo.ir", demoLabel: "projects.website", listings: [["Chrome Web Store", "https://chromewebstore.google.com/detail/hhchlcjldhlccicaaeiifmfdbacedhoi"]], en: "Iran's classifieds search engine \u2014 homes, cars and more in one app.", fa: "موتور جستجوی آگهی‌های ایران؛ ملک، خودرو و کالا در یک جستجو.", tags: ["Android", "Cafe Bazaar", "Search", "Classifieds"] },
+    { id: "azadchi-app", name: "AzadChi", nameFa: "آزادچی", lang: "Android", icon: "car", ver: "v1.0.20", repo: false, docs: false, home: "https://cafebazaar.ir/app/com.azadchi.app", store: "https://cafebazaar.ir/app/com.azadchi.app", storeLabel: "projects.bazaar", en: "Free marketplace for buying and selling free-zone plated cars in Kish, Qeshm, Aras, Maku, Arvand, Anzali, Chabahar and other free zones.", fa: "خرید و فروش رایگان خودروهای پلاک منطقه آزاد؛ کیش، قشم، ارس، ماکو، اروند، انزلی، چابهار و همه مناطق آزاد.", tags: ["Android", "Cafe Bazaar", "Automotive", "Marketplace"] },
+    { id: "alwer-app", name: "Alwer", nameFa: "آلور", lang: "Android", icon: "market", ver: "v1.0.14", repo: false, docs: false, home: "https://alwer.ir", store: "https://cafebazaar.ir/app/com.alwer.app", storeLabel: "projects.bazaar", demo: "https://alwer.ir", demoLabel: "projects.website", en: "Iran\u2019s needs marketplace: post a buy request, get price quotes, or list what you sell.", fa: "بازار نیازمندی‌های رایگان ایران: درخواست خرید ثبت کن، پیشنهاد قیمت بگیر یا آگهی فروش بگذار.", tags: ["Android", "Cafe Bazaar", "Marketplace", "Classifieds"] },
+    { id: "alweryar-app", name: "AlwerYar", nameFa: "آلوریار", lang: "Android", icon: "review", ver: "v1.0.5", repo: false, docs: false, home: "https://alweryar.ir", store: "https://cafebazaar.ir/app/com.alweryar.app", storeLabel: "projects.bazaar", demo: "https://alweryar.ir", demoLabel: "projects.website", en: "Alwer\u2019s review partner app: assess listings and suggest a decision; final publish stays with Alwer.", fa: "همیار آگهی‌های آلور: آگهی را می‌سنجی و پیشنهاد تصمیم می‌دهی؛ انتشار نهایی با آلور است.", tags: ["Android", "Cafe Bazaar", "Moderation"] },
+    { id: "alwerchi-app", name: "Alwerchi", nameFa: "آلورچی", lang: "Android", icon: "storefront", ver: "v1.0.5", repo: false, docs: false, home: "https://cafebazaar.ir/app/com.alwerchi.app", store: "https://cafebazaar.ir/app/com.alwerchi.app", storeLabel: "projects.bazaar", en: "Merchant app to manage products and stores on the Alwer platform.", fa: "پنل مدیریت فروشگاه و ثبت محصولات در بازار آلور.", tags: ["Android", "Cafe Bazaar", "Sellers"] }
   ];
 
   var PROJECT_ICONS = {
@@ -106,7 +115,11 @@
     eval: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
     ziman: '<path d="M5 5h9a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3h-4l-4 3v-3H5a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3z"/>',
     dns: '<path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM3.2 12h17.6M12 3c2.6 3 3.7 6 3.7 9s-1.1 6-3.7 9M12 3c-2.6 3-3.7 6-3.7 9s1.1 6 3.7 9"/>',
-    search: '<path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM20 20l-3.8-3.8"/>'
+    search: '<path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM20 20l-3.8-3.8"/>',
+    car: '<path d="M5 16l1.6-6.2h10.8L19 16M5 16h14M7 16v3M17 16v3M7.2 9.8l1.1-3.3h7.4l1.1 3.3"/>',
+    market: '<path d="M4 7h16l-1.5 9.5a2 2 0 0 1-2 1.5h-9a2 2 0 0 1-2-1.5L4 7zM9 7V5a3 3 0 0 1 6 0v2"/>',
+    review: '<path d="M8 5h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zM9 5V3.5h6V5M9 12.5l2 2 4-4"/>',
+    storefront: '<path d="M4 10l2-5h12l2 5M4 10h16v9H4v-9zM9 19v-5h6v5"/>'
   };
 
   // Stack items demonstrated by a project link to it.
@@ -156,30 +169,39 @@
   var DOCS = "https://sadrmanesh.github.io/";
   var LINK_ICON = '<svg class="chip-ico" viewBox="0 0 24 24" width="11" height="11" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
-  function repoUrl(p) { return p.repo || (GH + p.id); }
-  function docsUrl(p) { return p.docs || (DOCS + p.id + "/"); }
+  function repoUrl(p) { return p.repo === false ? "" : (p.repo || (GH + p.id)); }
+  function docsUrl(p) { return p.docs === false ? "" : (p.docs || (DOCS + p.id + "/")); }
 
   function projectCard(p, lang, t) {
+    var repo = repoUrl(p);
+    var docs = docsUrl(p);
+    var title = (lang === "fa" && p.nameFa) ? p.nameFa : (p.name || p.id);
+    var titleLang = (lang === "fa" && p.nameFa) ? 'lang="fa" dir="rtl"' : 'lang="en" dir="ltr"';
+    var titleHref = p.home || repo || p.store || p.demo || docs;
+    var ver = p.ver ? '<span class="badge badge-ver">' + esc(p.ver) + '</span>' : '';
     return '<article class="project" id="project-' + p.id + '">' +
       '<div class="project-top"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24">' + PROJECT_ICONS[p.icon] + '</svg></div>' +
-      '<div class="project-meta" lang="en" dir="ltr"><span class="badge">' + esc(p.lang) + '</span><span class="badge badge-ver">' + esc(p.ver || "v0.2.0") + '</span></div></div>' +
-      '<h3 class="project-name" lang="en" dir="ltr"><a href="' + esc(repoUrl(p)) + '" target="_blank" rel="noopener">' + esc(p.id) + '</a></h3>' +
+      '<div class="project-meta" lang="en" dir="ltr"><span class="badge">' + esc(p.lang) + '</span>' + ver + '</div></div>' +
+      '<h3 class="project-name" ' + titleLang + '><a href="' + esc(titleHref) + '" target="_blank" rel="noopener">' + esc(title) + '</a></h3>' +
       '<p class="project-pitch">' + esc(p[lang]) + '</p>' +
       '<ul class="tags" lang="en" dir="ltr">' + p.tags.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join("") + '</ul>' +
       (p.install ? '<pre class="project-install" lang="en" dir="ltr">' + [].concat(p.install).map(function (c) { return '<code>' + esc(c) + '</code>'; }).join("\n") + '</pre>' : '') +
       '<div class="project-links">' +
-      '<a class="plink" href="' + esc(repoUrl(p)) + '" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="' + ICONS.github + '"/></svg><span>' + esc(t["projects.repo"]) + '</span></a>' +
-      (p.store ? '<a class="plink" href="' + esc(p.store) + '" target="_blank" rel="noopener" lang="en" dir="ltr"><span>' + esc(t["projects.store"]) + '</span></a>' : '') +
+      (repo ? '<a class="plink" href="' + esc(repo) + '" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="' + ICONS.github + '"/></svg><span>' + esc(t["projects.repo"]) + '</span></a>' : '') +
+      (p.store && docs ? '<a class="plink" href="' + esc(p.store) + '" target="_blank" rel="noopener" lang="en" dir="ltr"><span>' + esc(t[p.storeLabel || "projects.store"]) + '</span></a>' : '') +
       (p.demo ? '<a class="plink" href="' + esc(p.demo) + '" target="_blank" rel="noopener"><span>' + esc(t[p.demoLabel || "projects.demo"]) + '</span></a>' : '') +
       (p.article ? '<a class="plink" href="' + esc(p.article) + '" target="_blank" rel="noopener"><span>' + esc(t["projects.article"]) + '</span></a>' : '') +
       (p.listings || []).map(function (l) { return '<a class="plink" href="' + esc(l[1]) + '" target="_blank" rel="noopener" lang="en" dir="ltr"><span>' + esc(l[0]) + '</span></a>'; }).join("") +
-      '<a class="plink plink-primary" href="' + esc(docsUrl(p)) + '" target="_blank" rel="noopener"><span>' + esc(t["projects.docs"]) + '</span>' + ARROW + '</a>' +
+      (docs ? '<a class="plink plink-primary" href="' + esc(docs) + '" target="_blank" rel="noopener"><span>' + esc(t["projects.docs"]) + '</span>' + ARROW + '</a>' :
+        (p.store ? '<a class="plink plink-primary" href="' + esc(p.store) + '" target="_blank" rel="noopener" lang="en" dir="ltr"><span>' + esc(t[p.storeLabel || "projects.store"]) + '</span>' + ARROW + '</a>' : '')) +
       '</div></article>';
   }
 
   function renderProjects(lang) {
     var t = I18N[lang] || I18N.en;
     document.getElementById("projectList").innerHTML = PROJECTS.map(function (p) { return projectCard(p, lang, t); }).join("");
+    var appList = document.getElementById("appList");
+    if (appList) appList.innerHTML = APPS.map(function (p) { return projectCard(p, lang, t); }).join("");
     document.getElementById("extensionList").innerHTML = EXTENSIONS.map(function (p) { return projectCard(p, lang, t); }).join("");
   }
 
